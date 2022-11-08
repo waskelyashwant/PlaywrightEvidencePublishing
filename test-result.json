@@ -1,0 +1,500 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\playwright.config.ts",
+    "rootDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.27.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "add-update-service-details.test.ts",
+      "file": "add-update-service-details.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "testing",
+          "file": "add-update-service-details.test.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DGI record creation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30002,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "globalTeardown Called and started....\n"
+                        },
+                        {
+                          "text": "\u001b[36m<ref *1>\u001b[39m Mail {\n  _events: [Object: null prototype] {},\n  _eventsCount: \u001b[33m0\u001b[39m,\n  _maxListeners: \u001b[90mundefined\u001b[39m,\n  options: {\n    host: \u001b[32m'smtp.gmail.com'\u001b[39m,\n    port: \u001b[33m465\u001b[39m,\n    secureConnection: \u001b[33mtrue\u001b[39m,\n    auth: { user: \u001b[32m'MaSHTestt@gmail.com'\u001b[39m, pass: \u001b[32m'Kimisenp@i33'\u001b[39m }\n  },\n  _defaults: {},\n  _defaultPlugins: { compile: [ \u001b[36m[Function (anonymous)]\u001b[39m ], stream: [] },\n  _userPlugins: { compile: [], stream: [] },\n  meta: Map(0) {},\n  dkim: \u001b[33mfalse\u001b[39m,\n  transporter: SMTPTransport {\n    _events: [Object: null prototype] {\n      log: \u001b[36m[Function (anonymous)]\u001b[39m,\n      error: \u001b[36m[Function (anonymous)]\u001b[39m,\n      idle: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    _eventsCount: \u001b[33m3\u001b[39m,\n    _maxListeners: \u001b[90mundefined\u001b[39m,\n    options: {\n      host: \u001b[32m'smtp.gmail.com'\u001b[39m,\n      port: \u001b[33m465\u001b[39m,\n      secureConnection: \u001b[33mtrue\u001b[39m,\n      auth: \u001b[36m[Object]\u001b[39m\n    },\n    logger: {\n      trace: \u001b[36m[Function (anonymous)]\u001b[39m,\n      debug: \u001b[36m[Function (anonymous)]\u001b[39m,\n      info: \u001b[36m[Function (anonymous)]\u001b[39m,\n      warn: \u001b[36m[Function (anonymous)]\u001b[39m,\n      error: \u001b[36m[Function (anonymous)]\u001b[39m,\n      fatal: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    name: \u001b[32m'SMTP'\u001b[39m,\n    version: \u001b[32m'6.8.0[client:6.8.0]'\u001b[39m,\n    auth: {\n      type: \u001b[32m'LOGIN'\u001b[39m,\n      user: \u001b[32m'MaSHTestt@gmail.com'\u001b[39m,\n      credentials: \u001b[36m[Object]\u001b[39m,\n      method: \u001b[33mfalse\u001b[39m\n    },\n    mailer: \u001b[36m[Circular *1]\u001b[39m,\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  },\n  logger: {\n    trace: \u001b[36m[Function (anonymous)]\u001b[39m,\n    debug: \u001b[36m[Function (anonymous)]\u001b[39m,\n    info: \u001b[36m[Function (anonymous)]\u001b[39m,\n    warn: \u001b[36m[Function (anonymous)]\u001b[39m,\n    error: \u001b[36m[Function (anonymous)]\u001b[39m,\n    fatal: \u001b[36m[Function (anonymous)]\u001b[39m\n  },\n  close: \u001b[36m[Function (anonymous)]\u001b[39m,\n  isIdle: \u001b[36m[Function (anonymous)]\u001b[39m,\n  verify: \u001b[36m[Function (anonymous)]\u001b[39m,\n  [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Seeennnnttt\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-11-03T09:19:22.793Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\add-update-service-details-testing-DGI-record-creation-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\add-update-service-details-testing-DGI-record-creation-chromium\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\add-update-service-details-testing-DGI-record-creation-chromium\\test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\add-update-service-details-testing-DGI-record-creation-chromium\\test-failed-4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f721022fe4d5910a82ab-d1a01ce5291610940cc2",
+              "file": "add-update-service-details.test.ts",
+              "line": 17,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bvt.test.ts",
+      "file": "bvt.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "BVT testing",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30011,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-03T09:19:22.833Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\bvt-BVT-testing-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\bvt-BVT-testing-chromium\\test-failed-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "653500606cc22fe5e04e-95ce9bc53ff923d1e2c3",
+          "file": "bvt.test.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "DGI record creation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "timedOut",
+                  "duration": 30007,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-03T09:19:22.819Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\example-DGI-record-creation-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\example-DGI-record-creation-chromium\\test-failed-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-0484dc7fba17ef04aa37",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "Mailer.test.ts",
+      "file": "Mailer.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "BVT Testing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 10906,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\"\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-03T09:19:22.873Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3bdd1520cffe121d333b-ec5a7307d0f2e2f7cd48",
+          "file": "Mailer.test.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "supportingDocuments.test.ts",
+      "file": "supportingDocuments.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "BVT testing",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "timedOut",
+                  "duration": 30009,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-03T09:19:22.802Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\supportingDocuments-BVT-testing-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\supportingDocuments-BVT-testing-chromium\\test-failed-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "438ef758589ef99f4bfd-4920c475adcb86a790cc",
+          "file": "supportingDocuments.test.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "test2.test.ts",
+      "file": "test2.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "DGI record creation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "timedOut",
+                  "duration": 29999,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2022-11-03T09:19:22.846Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\test2-DGI-record-creation-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\test2-DGI-record-creation-chromium\\test-failed-2.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9ab82ed8484d348a2fb2-0599683e8430fa1f0d2a",
+          "file": "test2.test.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "testing.test.ts",
+      "file": "testing.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Evidence publishing",
+          "file": "testing.test.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DGI record creation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30013,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-11-03T09:19:33.790Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI-record-creation-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI-record-creation-chromium\\test-failed-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI-record-creation-chromium\\test-failed-3.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI-record-creation-chromium\\test-failed-4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ff2f34bc899b695d13d7-f86aaf0de83f183ef346",
+              "file": "testing.test.ts",
+              "line": 6,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,138 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 50000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\playwright.config.ts",
+    "rootDir": "C:/Users/v-ywaskel/OneDrive - MAQ Software/Documents/Playwright-test/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.27.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "testing.test.ts",
+      "file": "testing.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Evidence publishing",
+          "file": "testing.test.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DGI3 record creation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 50000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 25104,
+                      "error": {
+                        "message": "locator.click: Error: strict mode violation: \"span:has-text(\"Assign\")\" resolved to 2 elements:\n    1) <span aria-hidden=\"true\" class=\"pa-cn pa-as pa-a pa-co…>…</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n    2) <span class=\"pa-gy pa-dl pa-so pa-ai pa-e pa-av pa-nm …>Assign</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n\n=========================== logs ===========================\nwaiting for selector \"span:has-text(\"Assign\")\"\n============================================================",
+                        "stack": "locator.click: Error: strict mode violation: \"span:has-text(\"Assign\")\" resolved to 2 elements:\n    1) <span aria-hidden=\"true\" class=\"pa-cn pa-as pa-a pa-co…>…</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n    2) <span class=\"pa-gy pa-dl pa-so pa-ai pa-e pa-av pa-nm …>Assign</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n\n=========================== logs ===========================\nwaiting for selector \"span:has-text(\"Assign\")\"\n============================================================\n    at C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\tests\\testing.test.ts:507:53"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\tests\\testing.test.ts",
+                            "column": 53,
+                            "line": 507
+                          },
+                          "message": "locator.click: Error: strict mode violation: \"span:has-text(\"Assign\")\" resolved to 2 elements:\n    1) <span aria-hidden=\"true\" class=\"pa-cn pa-as pa-a pa-co…>…</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n    2) <span class=\"pa-gy pa-dl pa-so pa-ai pa-e pa-av pa-nm …>Assign</span> aka playwright.$(\"button[role=\"menuitem\"]:has-text(\"Assign\")\")\n\n=========================== logs ===========================\nwaiting for selector \"span:has-text(\"Assign\")\"\n============================================================\n\n\u001b[90m   at \u001b[39mtesting.test.ts:507\n\n\u001b[0m \u001b[90m 505 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 506 |\u001b[39m       \u001b[90m// await page.locator('span:has-text(\"Assign\")').first().click();\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 507 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'span:has-text(\"Assign\")'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 508 |\u001b[39m       \u001b[90m// console.log(\"Fsafs\");\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 509 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 510 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-id=\"ok_id\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\tests\\testing.test.ts:507:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "fasdfsd\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-11-03T12:05:11.975Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI3-record-creation-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\test-results\\testing-Evidence-publishing-DGI3-record-creation-chromium\\test-failed-2.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\v-ywaskel\\OneDrive - MAQ Software\\Documents\\Playwright-test\\tests\\testing.test.ts",
+                        "column": 53,
+                        "line": 507
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ff2f34bc899b695d13d7-f202ae90ce8c90e0b7a2",
+              "file": "testing.test.ts",
+              "line": 6,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
