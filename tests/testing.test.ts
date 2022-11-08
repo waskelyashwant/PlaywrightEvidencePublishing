@@ -18,7 +18,7 @@ test.describe('Evidence publishing', () => {
     
     await page.locator('a:has-text("Service Module")').click();
     await page.frameLocator('#AppLandingPage').locator('text=Service Module').click();
-    // await page.locator('id=app-search-input').fill("Digital Inventory");
+    
     await page.locator('span:has-text("Marketing Project")').click();
 
     await page.waitForURL("https://mashtest.crm.dynamics.com/main.aspx?appid=22414b3c-651a-ea11-a811-000d3a5ac196&pagetype=entitylist&etn=mash_project&viewid=b4a454ec-e918-e911-a97a-000d3a30dc0a&viewType=1039");
